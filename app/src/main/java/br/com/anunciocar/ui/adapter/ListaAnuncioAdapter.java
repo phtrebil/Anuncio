@@ -33,7 +33,7 @@ public class ListaAnuncioAdapter extends RecyclerView.Adapter<ListaAnuncioAdapte
     @NonNull
     @Override
     public AnuncioViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View viewCriada = LayoutInflater.from(context).inflate(R.layout.item_anuncio, parent, false);
+        View viewCriada = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_anuncio, parent, false);
         return new AnuncioViewHolder(viewCriada);
     }
 
